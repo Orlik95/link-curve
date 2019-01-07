@@ -1,0 +1,150 @@
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<div id="header"></div>
+
+<div id="topbar">
+    <div id="menu">
+        <ul>
+            <li><a href="#o-nas">O NAS</a></li>
+            <li><a href="#progress">PROGRESS</a></li>
+            <li><a href="#roster">ROSTER</a></li>
+            <li><a href="#aplikuj">APLIKUJ</a></li>
+        </ul>
+    </div>
+
+    <div id="menuMobileTitle">
+        <span>Menu</span>
+        <button class="hamburger"></button>
+    </div>
+
+
+    <div id="menuMobile">
+        <ul>
+            <li><a href="#o-nas">O NAS</a></li>
+            <li><a href="#progress">PROGRESS</a></li>
+            <li><a href="#roster">ROSTER</a></li>
+            <li><a href="#aplikuj">APLIKUJ</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="panel" id="o-nas">
+    <p>
+        <h2>O nas</h2>
+    </p>
+
+    <p>
+        Jesteśmy nową gildią (powstałą w BFA), złożoną z graczy, którzy grają ze sobą od długiego czasu.
+        W skład naszej gildii wchodzą osoby pełnoletnie, które po ciężkim dniu pracy chcą odprężyć się podczas gry z ludźmi szanującymi czas swój oraz innych.
+        Dzięki temu udaje nam się wspólnie progresować obecny kontent oraz grać m+ na przyzwoitym poziomie.
+    </p>
+
+    <p>
+        <span class="font-weight-bold">Podstawowe Informacje:<br></span>
+        <ul>
+            <li>Gildia PvE</li>
+            <li>Cel to granie wysokich m+ oraz Cutting Edge w każdym tierze</li>
+            <li>Godziny raidowania to 21:00 – 23:30</li>
+            <li>Dni raidowe: Poniedziałek, Środa, Czwartek</li>
+            <li>Wymagany iLvl: adekwatny do progressu Mythic</li>
+        </ul>
+    </p>
+
+    <p>
+        <span class="font-weight-bold">Co oferujemy:<br></span>
+        Przede wszystkim wspólną grę i niepozostawianie na lodzie osób w potrzebie. Będziemy grali Mythic + na co dzień oraz raidy we wskazanych terminach.
+    </p>
+
+    <p>
+        <span class="font-weight-bold">Raidy<br></span>
+        Raidy są jednym z naszych celów, który będziemy chcieli osiągnąć.
+        Wszyscy, którzy grają w naszej gildii, mają doświadczenie z raidami na poziomie Mythic. Jednak jeżeli nie posiadasz takiego doświadczenia, ale grasz na przyzwoitym poziomie – daj sobie szansę i spróbuj swoich sił z nami.
+    </p>
+
+    <p>
+        <span class="font-weight-bold">Mythic+<br></span>
+        Nie brakuje również osób, dla których raidowanie jest od jakiegoś czasu tylko dodatkiem do gry. Skupiają się one głównie na graniu Mythic+.
+        Spotkamy tutaj osoby, z dużym doświadczeniem z Legionu (powyżej 4k RIO), które chcą grać na podobnym poziomie w BFA.
+    </p>
+
+    <p>
+        <span class="font-weight-bold">Finanse<br></span>
+        Celujemy w zarobki gildii na takim poziomie, by nikt nie musiał płacić za pre-paida inaczej niż goldem. W gildii gra wiele osób z ogromnym doświadczeniem w boostowaniu zarówno Raidów jak i Mythic+. Dzięki temu możemy zapewnić sobie stabilność i bogactwo.
+    </p>
+
+    <p>
+        <span class="font-weight-bold">Komunikator<br></span>
+        Całe życie Gildii odbywa się na Discordzie. To na nim raidujemy, gramy klucze, boostujemy, czy najzwyczajniej w świecie siedzimy i gadamy o pierdołach.
+        Podstawową zasadą jest – <span class="font-weight-bold">NIE BÓJ SIĘ WEJŚĆ NA DISCORDA</span> – My nie gryziemy. Nie jesteśmy cwaniakami z zadartymi nosami. Jesteśmy pełnoletnimi ludźmi, którzy wspólnie spędzają czas w miłej atmosferze, więc nie ma się czego bać ani wstydzić.
+    </p>
+
+    </div>
+
+<div class="panel" id="progress">
+    <p>
+        <h2>Progress</h2>
+    </p>
+
+    <p id="summary">{{progress}}</p>
+</div>
+
+<div class="panel" id="roster">
+    <p>
+    <h2>Nasz skład</h2>
+    </p>
+
+    <h3>Tankowie</h3>
+    <div class="role">
+        {{#each tanks}}
+            <div class="raider"><a href="https://worldofwarcraft.com/en-gb/character/burning-legion/{{ nick }}" class="{{ class }} font-weight-bold">{{ nick }}</a></div>
+        {{/each}}
+    </div>
+
+    <br><br>
+
+    <h3>Healerzy</h3>
+    <div class="role">
+        {{#each healers}}
+            <div class="raider"><a href="https://worldofwarcraft.com/en-gb/character/burning-legion/{{ nick }}" class="{{ class }} font-weight-bold">{{ nick }}</a></div>
+        {{/each}}
+    </div>
+
+    <br><br>
+    <h3>rDPS</h3>
+    <div class="role">
+        {{#each rdps}}
+            <div class="raider"><a href="https://worldofwarcraft.com/en-gb/character/burning-legion/{{ nick }}" class="{{ class }} font-weight-bold">{{ nick }}</a></div>
+        {{/each}}
+    </div>
+
+    <br><br>
+    <h3>mDPS</h3>
+    <div class="role">
+        {{#each mdps}}
+            <div class="raider"><a href="https://worldofwarcraft.com/en-gb/character/burning-legion/{{ nick }}" class="{{ class }} font-weight-bold">{{ nick }}</a></div>
+        {{/each}}
+    </div>
+</div>
+
+<div class="panel" id="aplikuj">
+    <p>
+        <h2>Dołącz do nas!</h2>
+    </p>
+    <div id="contact-form">
+        <input type="text" id="nick" class="form-control float-left sds" placeholder="Nick...">
+        <input type="text" id="btag" class="form-control float-left" placeholder="Battletag...">
+        <textarea id="about" class="form-control float-left" placeholder="Napisz coś o sobie..."></textarea>
+        <button onclick="sendMail(document.getElementById('nick').value, document.getElementById('btag').value, document.getElementById('about').value)" class="btn btn-primary float-right">Wyślij!</button>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
